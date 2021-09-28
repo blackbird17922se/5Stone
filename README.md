@@ -10,5 +10,3 @@ Me caracterizo por ser una persona honesta y respetuosa con habilidades de segui
 
 ### Michael Daniel Forero Roldan
 Estudiante de ing. Agricola de la universidad Nacional de Colombia, con conocimientos basicos de POO, java, python y visual basic. Considero que soy de rapido aprendizaje y evoluciono rapido con respecto a lo que aprendo, no me gusta quedarme con lo que me enseñan nada más porque siempre estoy en busqueda de nuevos conocimientos.
-
-jajajajaja
