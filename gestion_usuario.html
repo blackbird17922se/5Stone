@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body>
+    <header>
+
+        <!-- NAVBAR -->
+        <nav id="title-bar" class="">
+            <div class="container-fluid">
+                <h1>Usuarios</h1>
+            </div>
+        </nav>
+
+        <section>
+            <!-- Toolbar -->
+            <div id="toolbar" class="toolbr-orange">
+                <div class="container-fluid">
+                    <!-- Input Codigo de Barras -->
+                    <div class="row" >
+                        <div class="col-md-2">
+                            <p class="info-cant">
+                                <span class="info-cant-number">0</span> Elementos <br />
+                                <span class="info-tx">en esta sección</span>
+                            </p>
+                        </div>
+    
+    
+                        <div class="col-md-7" id="tool_items">
+                            <div class="row">
+                                
+                                <a class="nav-link tool_item" href="#" role="button" type="button"  data-toggle="modal" data-target="#crearUsuario" >
+                                    <i class="fas fa-user"></i> <br> <span>Nuevo Usuario</span> 
+                                </a>
+                                <a class="nav-link tool_item" href="#" role="button" type="button"  data-toggle="modal" data-target="#crearUsuario" >
+                                    <i class="fas fa-tools"></i> <br> <span>Gestión Roles</span> 
+                                </a>
+    
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+
+    </header>
+
+    <main>
+   <div id="cont-cards" >
+        <div class="row d-flex align-items-stretch">
+
+            <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch">
+            <div class="card bg-light">
+              <div class="card-header text-muted border-bottom-0">
+                Administrador
+              </div>
+              <div class="card-body pt-0">
+                <div class="row">
+                  <div class="col-7">
+                    <h2 class="lead"><b>Nicole Pearson</b></h2>
+                    
+                    <ul class="ml-4 mb-0 fa-ul text-muted">
+                      <li class="small"><span class="fa-li"><i class="fas fa-lg fa-building"></i></span> Dirección: Demo Street 123, Demo City 04312, NJ</li>
+                      <li class="small"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span> Celular: + 800 - 12 12 23 52</li>
+                    </ul>
+                  </div>
+                  <div class="col-5 text-center">
+                    <img src="img/user1-128x128.jpg" alt="user-avatar" class="img-circle img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="text-right">
+             
+                  <a href="#" class="btn btn-sm btn-primary">
+                    <i class="fas fa-pencil"></i> Editar
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+
+          <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch">
+            <div class="card bg-light">
+              <div class="card-header text-muted border-bottom-0">
+                Usuario
+              </div>
+              <div class="card-body pt-0">
+                <div class="row">
+                  <div class="col-7">
+                    <h2 class="lead"><b>Nicole Pearson</b></h2>
+                    
+                    <ul class="ml-4 mb-0 fa-ul text-muted">
+                      <li class="small"><span class="fa-li"><i class="fas fa-lg fa-building"></i></span> Dirección: Demo Street 123, Demo City 04312, NJ</li>
+                      <li class="small"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span> Celular: + 800 - 12 12 23 52</li>
+                    </ul>
+                  </div>
+                  <div class="col-5 text-center">
+                    <img src="img/user3-128x128.jpg" alt="user-avatar" class="img-circle img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="text-right">
+             
+                  <a href="#" class="btn btn-sm btn-primary">
+                    <i class="fas fa-pencil"></i> Editar
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch">
+            <div class="card bg-light">
+              <div class="card-header text-muted border-bottom-0">
+                Usuario
+              </div>
+              <div class="card-body pt-0">
+                <div class="row">
+                  <div class="col-7">
+                    <h2 class="lead"><b>Nicole Pearson</b></h2>
+                    
+                    <ul class="ml-4 mb-0 fa-ul text-muted">
+                      <li class="small"><span class="fa-li"><i class="fas fa-lg fa-building"></i></span> Dirección: Demo Street 123, Demo City 04312, NJ</li>
+                      <li class="small"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span> Celular: + 800 - 12 12 23 52</li>
+                    </ul>
+                  </div>
+                  <div class="col-5 text-center">
+                    <img src="img/user4-128x128.jpg" alt="user-avatar" class="img-circle img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="text-right">
+             
+                  <a href="#" class="btn btn-sm btn-primary">
+                    <i class="fas fa-pencil"></i> Editar
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch">
+            <div class="card bg-light">
+              <div class="card-header text-muted border-bottom-0">
+                Usuario
+              </div>
+              <div class="card-body pt-0">
+                <div class="row">
+                  <div class="col-7">
+                    <h2 class="lead"><b>Nicole Pearson</b></h2>
+                    
+                    <ul class="ml-4 mb-0 fa-ul text-muted">
+                      <li class="small"><span class="fa-li"><i class="fas fa-lg fa-building"></i></span> Dirección: Demo Street 123, Demo City 04312, NJ</li>
+                      <li class="small"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span> Celular: + 800 - 12 12 23 52</li>
+                    </ul>
+                  </div>
+                  <div class="col-5 text-center">
+                    <img src="img/user8-128x128.jpg" alt="user-avatar" class="img-circle img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="text-right">
+             
+                  <a href="#" class="btn btn-sm btn-primary">
+                    <i class="fas fa-pencil"></i> Editar
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+
+        </div>
+    </div>
+    </main>
+
+            
+    
+</body>
+</html>
