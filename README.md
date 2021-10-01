@@ -9,3 +9,5 @@ Tecnólogo en ADSI, con conocimientos en el desarrollo de páginas y aplicacione
 Me caracterizo por ser una persona honesta y respetuosa con habilidades de seguir instrucciones, tener una orientación hacia la realización del logro y deseos de seguir aprendiendo.
 
 
+### Sergio Andres Mesa
+Soy Ingeniero de Sistemas y trabajo para Hoteles Royal SA.
