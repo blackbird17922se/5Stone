@@ -13,3 +13,6 @@ Me caracterizo por ser una persona honesta y respetuosa con habilidades de segui
 
 # Edgar Gabriel Torres Farfán
 - Soy Ingeniero de Sistemas, tengo 37 años de edad, vivo en Chocontá (Cund), y actualmente trabajo en el Banco Agrario de Colombia. Cuento on capacidad para diagnosticar, diseñar, construir, evaluar, auditar y mantener sistemas y procesos de información dentro de un marco administrativo, empresarial y humanista. Buenas relaciones interpersonales, adaptabilidad al cambio, liderazgo, optimista y con deseo de aportar e incrementar conocimientos. Manejo eficiente del equipo y herramientas de trabajo, y cumplimiento de metas basado en la autogestión y trabajo en equipo.
+
+# Sergio Andres Mesa
+- Soy Ingeniero de Sistemas y trabajo para Hoteles Royal SA.
