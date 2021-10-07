@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    
 }
 
 /* ESTILOS 5STORE */
@@ -45,6 +46,8 @@
 
 #tool_items a{
     color: #ffffff;
+    text-decoration: none;
+    margin: 10px;
 }
 
 #tool_items .tool_item{

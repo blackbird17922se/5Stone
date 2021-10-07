@@ -6,12 +6,183 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usuarios</title>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
 
 </head>
 <body>
+
+  <!-- Modal Crear usuario -->
+  <div class="modal fade" id="mod_n_usuario" tabindex="-1" aria-labelledby="mod_n_usuario" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Nuevo Usuario</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+
+          <!-- Inicio formulario -->
+
+
+          <form id="form_crear_usu">
+
+            <div class="form-group">
+                <label for="id_usu">Identificación</label>
+                <input type="number" class="form-control" name="id_usu" id="id_usu" required >
+                <small id="id_usuHelp" class="form-text text-muted">Diligencie el numero de identificación del usuario</small>
+            </div>
+
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" aria-describedby="nombreHelp" required>
+                <small id="nombreHelp" class="form-text text-muted">Diligencie el nombre del usuario</small>
+
+            </div>
+
+            <div class="form-group">
+                <label for="apellido">Apellido</label>
+                <input type="text" class="form-control" id="apellido" name="apellido" aria-describedby="apellidoHelp" required>
+                <small id="apellidoHelp" class="form-text text-muted">Diligencie los apellidos del usuario</small>
+
+            </div>
+
+            <div class="form-group">
+                <label for="pass">Asigne una contraseña</label>
+                <input type="password" class="form-control" id="pass" name="pass" aria-describedby="passHelp" required>
+                <small id="apellidoHelp" class="form-text text-muted">Asigne una contraseña al usuario</small>
+
+            </div>
+
+            <div id="" name="cargo" class="form-group">
+                <label for="cargo">Cargo</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Seleccione...</option>
+                  <option value="1">Administrador</option>
+                  <option value="2">Vendedor</option>
+                </select>
+                <small id="cargopHelp" class="form-text text-muted">Diligencie el cargo a desempeñar el usuario</small>
+            </div>
+
+            <div id="" name="estado" class="form-group">
+                <label for="estado">Estado</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Seleccione...</option>
+                  <option value="1">Activo</option>
+                  <option value="2">Inactivo</option>
+                </select>
+                <small id="estadopHelp" class="form-text text-muted">Estado del usuario</small>
+            </div>
+
+                    <!-- ALERTAS -->
+            <div class="alert alert-success text-center" id="alert_add_usu" style="display: none;">
+                <span><i class="fa fa-check"></i> Usuario creado exitosamente.</span>
+            </div>
+
+            <div class="alert alert-danger text-center" id="alert_noadd_usu" style="display: none;">
+                <span><i class="fa fa-times"></i> El usuario ingresado ya existe.</span>
+            </div>
+            <div class="alert alert-danger text-center" id="alert_noCoincid_pass" style="display: none;">
+                <span><i class="fa fa-times"></i> Las contraseñas ingresadas no coinciden. Por favor reingrese la contraseña en ambos campos.</span>
+            </div>                     
+          </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary">Guardar</button>
+          </form>
+          <!-- fin form -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Editar usuario -->
+  <div class="modal fade" id="mod_ed_usuario" tabindex="-1" aria-labelledby="mod_ed_usuario" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="mod_ed_usuario">Editar Usuario</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+
+          <!-- Inicio formulario -->
+
+
+          <form id="form_crear_usu">
+
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input value="Nicole" type="text" class="form-control" id="nombre" name="nombre" aria-describedby="nombreHelp" required>
+                <small id="nombreHelp" class="form-text text-muted">Diligencie el nombre del usuario</small>
+
+            </div>
+
+            <div class="form-group">
+                <label for="apellido">Apellido</label>
+                <input value="Pearson" type="text" class="form-control" id="apellido" name="apellido" aria-describedby="apellidoHelp" required>
+                <small id="apellidoHelp" class="form-text text-muted">Diligencie los apellidos del usuario</small>
+
+            </div>
+
+            <div class="form-group">
+                <label for="pass">Asigne una contraseña</label>
+                <input value="rt7s88ahs" type="password" class="form-control" id="pass" name="pass" aria-describedby="passHelp" required>
+                <small id="apellidoHelp" class="form-text text-muted">Asigne una contraseña al usuario</small>
+
+            </div>
+
+            <div id="" name="cargo" class="form-group">
+                <label for="cargo">Cargo</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option >Seleccione...</option>
+                  <option selected value="1">Administrador</option>
+                  <option value="2">Vendedor</option>
+                </select>
+                <small id="cargopHelp" class="form-text text-muted">Diligencie el cargo a desempeñar el usuario</small>
+            </div>
+
+            <div id="" name="estado" class="form-group">
+                <label for="estado">Estado</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option>Seleccione...</option>
+                  <option selected value="1">Activo</option>
+                  <option value="2">Inactivo</option>
+                </select>
+                <small id="estadopHelp" class="form-text text-muted">Estado del usuario</small>
+            </div>
+
+                    <!-- ALERTAS -->
+            <div class="alert alert-success text-center" id="alert_add_usu" style="display: none;">
+                <span><i class="fa fa-check"></i> Usuario creado exitosamente.</span>
+            </div>
+
+            <div class="alert alert-danger text-center" id="alert_noadd_usu" style="display: none;">
+                <span><i class="fa fa-times"></i> El usuario ingresado ya existe.</span>
+            </div>
+            <div class="alert alert-danger text-center" id="alert_noCoincid_pass" style="display: none;">
+                <span><i class="fa fa-times"></i> Las contraseñas ingresadas no coinciden. Por favor reingrese la contraseña en ambos campos.</span>
+            </div>                     
+          </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary">Guardar</button>
+          </form>
+          <!-- fin form -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
     <header>
 
         <!-- NAVBAR -->
@@ -23,35 +194,27 @@
 
         <section>
             <!-- Toolbar -->
-            <div id="toolbar" class="toolbr-orange">
-                <div class="container-fluid">
-                    <!-- Input Codigo de Barras -->
-                    <div class="row" >
-                        <div class="col-md-2">
-                            <p class="info-cant">
-                                <span class="info-cant-number">0</span> Elementos <br />
-                                <span class="info-tx">en esta sección</span>
-                            </p>
-                        </div>
-    
-    
-                        <div class="col-md-7" id="tool_items">
-                            <div class="row">
-                                
-                                <a class="nav-link tool_item" href="#" role="button" type="button"  data-toggle="modal" data-target="#crearUsuario" >
-                                    <i class="fas fa-user"></i> <br> <span>Nuevo Usuario</span> 
-                                </a>
-                                <a class="nav-link tool_item" href="#" role="button" type="button"  data-toggle="modal" data-target="#crearUsuario" >
-                                    <i class="fas fa-tools"></i> <br> <span>Gestión Roles</span> 
-                                </a>
-    
-                            </div>
-    
-                        </div>
-                    </div>
-    
+          <div id="toolbar" class="toolbr-orange">
+            <div class="container-fluid">
+                   
+              <div class="row" >
+                <div class="col-md-2">
+                  <p class="info-cant">
+                    <span class="info-cant-number">0</span> Elementos <br />
+                    <span class="info-tx">en esta sección</span>
+                  </p>
                 </div>
+
+
+                <div class="col-md-7" id="tool_items">
+                  <a class="tool_item" href="#" role="button" type="button" data-bs-toggle="modal" data-bs-target="#mod_n_usuario">
+                      <i class="fas fa-user"></i> <br> <span>Nuevo Usuario</span> 
+                  </a>
+                </div>
+              </div>
+
             </div>
+          </div>
         </section>
 
     </header>
@@ -83,7 +246,7 @@
               <div class="card-footer">
                 <div class="text-right">
              
-                  <a href="#" class="btn btn-sm btn-primary">
+                  <a href="#" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#mod_ed_usuario">
                     <i class="fas fa-pencil"></i> Editar
                   </a>
                 </div>
@@ -116,7 +279,7 @@
               <div class="card-footer">
                 <div class="text-right">
              
-                  <a href="#" class="btn btn-sm btn-primary">
+                  <a href="#" class="btn btn-sm btn-primary"  data-bs-toggle="modal" data-bs-target="#mod_ed_usuario">
                     <i class="fas fa-pencil"></i> Editar
                   </a>
                 </div>
@@ -148,7 +311,7 @@
               <div class="card-footer">
                 <div class="text-right">
              
-                  <a href="#" class="btn btn-sm btn-primary">
+                  <a href="#" class="btn btn-sm btn-primary"  data-bs-toggle="modal" data-bs-target="#mod_ed_usuario">
                     <i class="fas fa-pencil"></i> Editar
                   </a>
                 </div>
@@ -180,7 +343,7 @@
               <div class="card-footer">
                 <div class="text-right">
              
-                  <a href="#" class="btn btn-sm btn-primary">
+                  <a href="#" class="btn btn-sm btn-primary"  data-bs-toggle="modal" data-bs-target="#mod_ed_usuario">
                     <i class="fas fa-pencil"></i> Editar
                   </a>
                 </div>
@@ -194,7 +357,7 @@
     </div>
     </main>
 
-            
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+
 </body>
 </html>
