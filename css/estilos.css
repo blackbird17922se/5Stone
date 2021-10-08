@@ -1,0 +1,105 @@
+*{
+    
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+body{
+    
+    margin: 15px;
+    background-image: url(../blog_metodos-ventas-exito.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+
+}
+/* personalizacion titulo */
+h1 {
+    text-align: center;
+    position: relative;
+    text-decoration:underline;
+}
+/* personalizacion tablas */
+table  {
+
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+tr, th {
+
+    border: solid 1px;
+    border-color: black;
+    background-color: transparent;
+    background-image: none;
+    
+
+}
+
+tr, td {
+    background-image: none;
+    height: 20px;
+    border: solid 1px;
+    border-color:black;
+}
+/* personalizacion info vendedor */
+#info_vendedor {
+    float: right;
+    
+}
+
+img {
+
+    margin: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition-property: all;
+    transition: all;
+   
+    
+}
+
+
+
+ul li {
+    text-align: end;
+    background-image: none;
+    text-decoration: underline;
+    
+
+}
+/* formulario para registrar, borrar y buscar ventas. */
+form input, label, button {
+    background-image: none;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+button{
+    margin: 5 px;
+    width: max-content;
+    background-color: gray;
+}
+
+/* apartado de links */
+#ciesesion {
+
+    float: right;
+
+}
+
+a {
+    text-decoration: none;
+    border: solid 2px;
+    background-color: gray;
+    border-radius: 5px;
+    padding: 0px 2px;
+
+}
